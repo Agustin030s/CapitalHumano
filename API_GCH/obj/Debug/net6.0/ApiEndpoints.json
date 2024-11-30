@@ -1,0 +1,418 @@
+[
+  {
+    "ContainingType": "API_GCH.Controllers.v1.DepartamentController",
+    "Method": "GetAllDepartaments",
+    "RelativePath": "api/v1/Departament",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_GCH.Controllers.v1.DepartamentController",
+    "Method": "CreateDepartament",
+    "RelativePath": "api/v1/Departament",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.Features.Departaments.Commands.CreateDepartamentCommand.CreateDepartamentCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_GCH.Controllers.v1.DepartamentController",
+    "Method": "GetDepartamentById",
+    "RelativePath": "api/v1/Departament/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_GCH.Controllers.v1.DepartamentController",
+    "Method": "UpdateDepartament",
+    "RelativePath": "api/v1/Departament/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "Application.Features.Departaments.Commands.UpdateDepartamentCommand.UpdateDepartamentCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_GCH.Controllers.v1.DepartamentController",
+    "Method": "DeleteDepartament",
+    "RelativePath": "api/v1/Departament/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_GCH.Controllers.v1.DepartamentController",
+    "Method": "FilterEmployeesByDepartament",
+    "RelativePath": "api/v1/Departament/filter/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_GCH.Controllers.v1.EmployeeController",
+    "Method": "GetAllEmployees",
+    "RelativePath": "api/v1/Employee",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_GCH.Controllers.v1.EmployeeController",
+    "Method": "CreateEmployee",
+    "RelativePath": "api/v1/Employee",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.Features.Employees.Command.CreateEmployeeCommand.CreateEmployeeCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_GCH.Controllers.v1.EmployeeController",
+    "Method": "GetEmployeeById",
+    "RelativePath": "api/v1/Employee/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_GCH.Controllers.v1.EmployeeController",
+    "Method": "UpdateEmployee",
+    "RelativePath": "api/v1/Employee/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "Application.Features.Employees.Command.UpdateEmployeeCommand.UpdateEmployeeCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_GCH.Controllers.v1.EmployeeController",
+    "Method": "DeleteEmployee",
+    "RelativePath": "api/v1/Employee/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_GCH.Controllers.v1.EmployeeController",
+    "Method": "UpdateEmployeePosition",
+    "RelativePath": "api/v1/Employee/update-position/{employeeId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employeeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "Application.Features.Employees.Command.UpdateEmployeePositionCommand.UpdateEmployeePositionCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_GCH.Controllers.v1.PositionController",
+    "Method": "GetAllPositions",
+    "RelativePath": "api/v1/Position",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_GCH.Controllers.v1.PositionController",
+    "Method": "CreatePosition",
+    "RelativePath": "api/v1/Position",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.Features.Positions.Commands.CreatePositionCommand.CreatePositionCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_GCH.Controllers.v1.PositionController",
+    "Method": "GetPositionById",
+    "RelativePath": "api/v1/Position/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_GCH.Controllers.v1.PositionController",
+    "Method": "UpdatePosition",
+    "RelativePath": "api/v1/Position/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "Application.Features.Positions.Commands.UpdatePositionCommand.UpdatePositionCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_GCH.Controllers.v1.PositionController",
+    "Method": "DeletePosition",
+    "RelativePath": "api/v1/Position/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_GCH.Controllers.v1.PositionController",
+    "Method": "AddSkillToPosition",
+    "RelativePath": "api/v1/Position/{positionId}/skill/{skillId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "positionId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "skillId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_GCH.Controllers.v1.SkillController",
+    "Method": "GetAllSkills",
+    "RelativePath": "api/v1/Skill",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_GCH.Controllers.v1.SkillController",
+    "Method": "CreateSkill",
+    "RelativePath": "api/v1/Skill",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.Features.Skills.Commands.CreateSkillCommand.CreateSkillCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_GCH.Controllers.v1.SkillController",
+    "Method": "GetSkillById",
+    "RelativePath": "api/v1/Skill/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_GCH.Controllers.v1.TaskController",
+    "Method": "GetAllTasks",
+    "RelativePath": "api/v1/Task",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_GCH.Controllers.v1.TaskController",
+    "Method": "CreateTask",
+    "RelativePath": "api/v1/Task",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.Features.Task.Commands.CreateTaskCommand.CreateTaskCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_GCH.Controllers.v1.TaskController",
+    "Method": "GetTaskById",
+    "RelativePath": "api/v1/Task/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_GCH.Controllers.v1.TaskController",
+    "Method": "UpdateTask",
+    "RelativePath": "api/v1/Task/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "Application.Features.Task.Commands.UpdateTaskCommand.UpdateTaskCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_GCH.Controllers.v1.TaskController",
+    "Method": "DeleteTask",
+    "RelativePath": "api/v1/Task/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
