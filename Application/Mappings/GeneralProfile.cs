@@ -16,7 +16,8 @@ namespace Application.Mappings
         {
             #region Dtos
             CreateMap<Departament, DepartamentDto>();
-            CreateMap<Position, PositionDto>();
+            CreateMap<Position, PositionDto>()
+                .ForMember(dest => dest.DepartamentName, opt => opt.MapFrom(src => src.Departament.Description));
             CreateMap<Domain.Entities.Tasks, TaskDto>();
             CreateMap<Skill, SkillDto>();
             CreateMap<Employee, EmployeeDto>();

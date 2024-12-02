@@ -27,7 +27,7 @@ namespace Application.Features.Skills.Queries.GetSkillByIdQuery
 
                 if (skill == null)
                 {
-                    throw new KeyNotFoundException($"Registro no encontrado con el id: {request.Id}");
+                    return new Response<SkillDto>($"Registro no encontrado con el Id: {request.Id}");
                 }
                 else
                 {

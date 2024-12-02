@@ -33,7 +33,7 @@ namespace Application.Features.Departaments.Queries.GetDepartamentById
 
                 if (departament == null)
                 {
-                    throw new KeyNotFoundException($"Registro no encontrado con el Id: {request.Id}");
+                    return new Response<DepartamentDto>($"Registro no encontrado con el Id: {request.Id}");
                 }
                 else
                 {

@@ -539,6 +539,27 @@
             "description": "Success"
           }
         }
+      },
+      "delete": {
+        "tags": [
+          "Skill"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
       }
     },
     "/api/v1/Task": {
@@ -710,6 +731,9 @@
             "type": "string",
             "nullable": true
           },
+          "sexo": {
+            "$ref": "#/components/schemas/Genero"
+          },
           "positionId": {
             "type": "integer",
             "format": "int32"
@@ -783,6 +807,15 @@
         "type": "integer",
         "format": "int32"
       },
+      "Genero": {
+        "enum": [
+          0,
+          1,
+          2
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
       "UpdateDepartamentCommand": {
         "type": "object",
         "properties": {
@@ -827,6 +860,9 @@
           "address": {
             "type": "string",
             "nullable": true
+          },
+          "sexo": {
+            "$ref": "#/components/schemas/Genero"
           }
         },
         "additionalProperties": false

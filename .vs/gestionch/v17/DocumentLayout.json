@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sebas\\OneDrive\\Proyectos\\gestionch\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DF6DD236-7C8A-47F5-9F79-D577381D35F6}|Application\\Application.csproj|c:\\users\\sebas\\onedrive\\proyectos\\gestionch\\application\\features\\skills\\queries\\getskillbyidquery\\getskillbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF6DD236-7C8A-47F5-9F79-D577381D35F6}|Application\\Application.csproj|solutionrelative:application\\features\\skills\\queries\\getskillbyidquery\\getskillbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9707B0C-A030-4A2F-BF64-C43AFE26E079}|API_GCH\\API_GCH.csproj|c:\\users\\sebas\\onedrive\\proyectos\\gestionch\\api_gch\\controllers\\v1\\skillcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9707B0C-A030-4A2F-BF64-C43AFE26E079}|API_GCH\\API_GCH.csproj|solutionrelative:api_gch\\controllers\\v1\\skillcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF6DD236-7C8A-47F5-9F79-D577381D35F6}|Application\\Application.csproj|c:\\users\\sebas\\onedrive\\proyectos\\gestionch\\application\\features\\task\\queries\\gettaskbyidquery\\gettaskbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF6DD236-7C8A-47F5-9F79-D577381D35F6}|Application\\Application.csproj|solutionrelative:application\\features\\task\\queries\\gettaskbyidquery\\gettaskbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GetSkillByIdQuery.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\OneDrive\\Proyectos\\gestionch\\Application\\Features\\Skills\\Queries\\GetSkillByIdQuery\\GetSkillByIdQuery.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\Skills\\Queries\\GetSkillByIdQuery\\GetSkillByIdQuery.cs",
+              "ToolTip": "C:\\Users\\sebas\\OneDrive\\Proyectos\\gestionch\\Application\\Features\\Skills\\Queries\\GetSkillByIdQuery\\GetSkillByIdQuery.cs",
+              "RelativeToolTip": "Application\\Features\\Skills\\Queries\\GetSkillByIdQuery\\GetSkillByIdQuery.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAWwA8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T12:17:50.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SkillController.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\OneDrive\\Proyectos\\gestionch\\API_GCH\\Controllers\\v1\\SkillController.cs",
+              "RelativeDocumentMoniker": "API_GCH\\Controllers\\v1\\SkillController.cs",
+              "ToolTip": "C:\\Users\\sebas\\OneDrive\\Proyectos\\gestionch\\API_GCH\\Controllers\\v1\\SkillController.cs",
+              "RelativeToolTip": "API_GCH\\Controllers\\v1\\SkillController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAwAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T12:16:12.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GetTaskByIdQuery.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\OneDrive\\Proyectos\\gestionch\\Application\\Features\\Task\\Queries\\GetTaskByIdQuery\\GetTaskByIdQuery.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\Task\\Queries\\GetTaskByIdQuery\\GetTaskByIdQuery.cs",
+              "ToolTip": "C:\\Users\\sebas\\OneDrive\\Proyectos\\gestionch\\Application\\Features\\Task\\Queries\\GetTaskByIdQuery\\GetTaskByIdQuery.cs",
+              "RelativeToolTip": "Application\\Features\\Task\\Queries\\GetTaskByIdQuery\\GetTaskByIdQuery.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwBwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T12:15:15.073Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

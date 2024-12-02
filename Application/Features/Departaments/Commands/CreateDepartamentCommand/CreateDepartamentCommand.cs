@@ -26,8 +26,8 @@ namespace Application.Features.Departaments.Commands.CreateDepartamentCommand
         public async Task<Response<int>> Handle(CreateDepartamentCommand request, CancellationToken cancellationToken)
         {
             List<Departament> departaments = await _repositoryAsync.ListAsync();
-            Departament filterDepartaments = departaments.FirstOrDefault(x => x.DepartamentCode == request.DepartamentCode);
-            if (filterDepartaments == null)
+            Departament filterDepartaments = departaments.FirstOrDefault(x => x.DepartamentCode.Equals(request.DepartamentCode, StringComparison.OrdinalIgnoreCase) == true);
+            if (filterDepartaments != null)
                 return new Response<int>($"El código de departamento {request.DepartamentCode} ya existe");
 
 

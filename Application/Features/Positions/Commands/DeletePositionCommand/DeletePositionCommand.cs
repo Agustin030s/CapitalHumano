@@ -23,7 +23,7 @@ namespace Application.Features.Positions.Commands.DeletePositionCommand
 
                 if(position == null)
                 {
-                    throw new KeyNotFoundException($"Registro no encontrado con el id: {request.Id}");
+                    return new Response<int>($"Registro no encontrado con el Id: {request.Id}");
                 }
                 else
                 {

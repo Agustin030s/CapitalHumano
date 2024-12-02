@@ -26,7 +26,7 @@ namespace Application.Features.Task.Queries.GetTaskByIdQuery
 
                 if (task == null)
                 {
-                    throw new KeyNotFoundException($"Registro no encontrado con el id: {request.Id}");
+                    return new Response<TaskDto>($"Registro no encontrado con el Id: {request.Id}");
                 }
                 else
                 {

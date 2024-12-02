@@ -2,6 +2,7 @@
 using Application.Interfaces;
 using Application.Specifications.RepositorySpecifications;
 using Application.Wrappers;
+using Ardalis.Specification;
 using AutoMapper;
 using Domain.Entities;
 using MediatR;
@@ -29,16 +30,25 @@ namespace Application.Features.Positions.Queries.GetPositionByIdQuery
                 {
                     p => p.Tasks,
                     p => p.Employees,
-                    p => p.positionSkills
+                    p => p.positionSkills,
+                };
+
+                var includeEntities = new List<Expression<Func<Position, object>>>
+                {
+                    p => p.Departament,
                 };
 
                 var spec = new EntitiesByIdWithIncludesSpec<Position, object>(request.Id, includeExpressions);
+                foreach(var include in includeEntities)
+                {
+                    spec.Query.Include(include);
+                }
 
                 Position position = await _repositoryAsync.FirstOrDefaultAsync(spec, cancellationToken);
 
                 if(position == null)
                 {
-                    throw new KeyNotFoundException($"Registro no encontrado con el Id: {request.Id}");
+                    return new Response<PositionDto>($"Registro no encontrado con el Id: {request.Id}");
                 }
                 else
                 {

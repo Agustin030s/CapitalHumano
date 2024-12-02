@@ -1,6 +1,7 @@
 ﻿using Application.Interfaces;
 using Application.Wrappers;
 using Domain.Entities;
+using Domain.Enums;
 using MediatR;
 
 namespace Application.Features.Employees.Command.UpdateEmployeeCommand
@@ -13,6 +14,7 @@ namespace Application.Features.Employees.Command.UpdateEmployeeCommand
         public string? Phone { get; set; }
         public string Email { get; set; }
         public string Address { get; set; }
+        public Genero Sexo { get; set; }
     }
 
     public class UpdateEmployeeCommandHandler : IRequestHandler<UpdateEmployeeCommand, Response<int>>
@@ -31,7 +33,7 @@ namespace Application.Features.Employees.Command.UpdateEmployeeCommand
             Employee employee = await _repositoryAsync.GetByIdAsync(request.Id);
             if(employee == null)
             {
-                throw new KeyNotFoundException($"Registro no encontrado con el id: {request.Id}");
+                return new Response<int>($"Registro no encontrado con el Id: {request.Id}");
             }
             else
             {

@@ -337,6 +337,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "API_GCH.Controllers.v1.SkillController",
+    "Method": "DeleteSkill",
+    "RelativePath": "api/v1/Skill/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API_GCH.Controllers.v1.TaskController",
     "Method": "GetAllTasks",
     "RelativePath": "api/v1/Task",

@@ -2,6 +2,7 @@
 using Application.Wrappers;
 using AutoMapper;
 using Domain.Entities;
+using Domain.Enums;
 using MediatR;
 
 namespace Application.Features.Employees.Command.CreateEmployeeCommand
@@ -14,6 +15,7 @@ namespace Application.Features.Employees.Command.CreateEmployeeCommand
         public string? Phone { get; set; }
         public string Email { get; set; }
         public string Address { get; set; }
+        public Genero Sexo { get; set; }
         public int PositionId { get; set; }
     }
 

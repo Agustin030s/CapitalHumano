@@ -41,7 +41,8 @@ namespace Application.Features.Positions.Queries.GetAllPositionsQuery
                     Query.Include(p => p.Tasks)
                          .Include(p => p.Employees)
                          .Include(p => p.positionSkills)
-                         .ThenInclude(ps => ps.Skill);
+                         .ThenInclude(ps => ps.Skill)
+                         .Include(p => p.Departament);
                 }
             }
         }

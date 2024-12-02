@@ -47,7 +47,7 @@ namespace Application.Features.Employees.Queries.GetEmployeeByIdQuery
 
                 if(employee == null)
                 {
-                    throw new KeyNotFoundException($"Registro no encontrado con el Id: {request.Id}");
+                    return new Response<EmployeeDto>($"Registro no encontrado con el Id: {request.Id}");
                 }
                 else
                 {

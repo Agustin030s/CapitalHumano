@@ -20,5 +20,15 @@ namespace Application.Specifications.RepositorySpecifications
                 Query.Include(expression);
             }
         }
+
+        public EntitiesByIdWithIncludesSpec(int id, List<Expression<Func<TEntity, object>>> includeEntities)
+        {
+            Query.Where(e => EF.Property<int>(e, "Id") == id);
+
+            foreach (var includeExpression in includeEntities)
+            {
+                Query.Include(includeExpression);
+            }
+        }
     }
 }
